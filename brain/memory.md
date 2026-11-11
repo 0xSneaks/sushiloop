@@ -6154,3 +6154,12 @@
 }
 ```
 ---
+
+## [2026-11-11T13:27:36.898457] Cycle 685: CycleResult.REJECTED
+```json
+{
+  "proposal": "One-Sided Question Detector",
+  "skill": "one_sided_question_detector"
+}
+```
+---
