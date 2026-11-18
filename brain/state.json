@@ -1,37 +1,10 @@
 {
-  "cycle_count": 703,
+  "cycle_count": 704,
   "total_skills": 92,
   "success_count": 106,
   "failure_count": 8,
-  "last_run": "2026-11-18T14:59:28.574224",
+  "last_run": "2026-11-18T23:49:42.394796",
   "history": [
-    {
-      "cycle_number": 604,
-      "proposal": {
-        "id": "9f421e5e-5b1a-4204-8bec-6ac0865a8169",
-        "proposal_type": "NEW_SKILL",
-        "category": "PII_DETECTION",
-        "title": "Indirect Identifier Combiner",
-        "description": "Flags inputs where several non-PII fields (ZIP, birth year, job) combine into a re-identifiable fingerprint",
-        "rationale": "Quasi-identifiers leak identity even when no single field is PII",
-        "success_criteria": [
-          "Catches the target pattern",
-          "Returns reason + confidence",
-          "Low false-positive rate"
-        ],
-        "tests_required": [
-          "auto"
-        ],
-        "estimated_complexity": 5,
-        "rollback_plan": "Delete file from skills/",
-        "created_at": "2026-10-17T20:00:19.721777"
-      },
-      "result": "REJECTED",
-      "skill_generated": "indirect_identifier_combiner",
-      "test_results": [],
-      "timestamp": "2026-10-17T20:00:19.721995",
-      "error_message": null
-    },
     {
       "cycle_number": 605,
       "proposal": {
@@ -2703,6 +2676,33 @@
       "skill_generated": "re_ask_loop_breaker",
       "test_results": [],
       "timestamp": "2026-11-18T14:59:28.574224",
+      "error_message": null
+    },
+    {
+      "cycle_number": 704,
+      "proposal": {
+        "id": "3bc1c6bb-6812-47fc-a182-2cfaca494d7b",
+        "proposal_type": "NEW_SKILL",
+        "category": "OUTPUT_FILTERING",
+        "title": "Fabricated Citation Flagger",
+        "description": "Flags AI output that cites sources, DOIs, or case names in a format that is plausible but unverifiable",
+        "rationale": "Invented citations are the highest-trust hallucination",
+        "success_criteria": [
+          "Catches the target pattern",
+          "Returns reason + confidence",
+          "Low false-positive rate"
+        ],
+        "tests_required": [
+          "auto"
+        ],
+        "estimated_complexity": 5,
+        "rollback_plan": "Delete file from skills/",
+        "created_at": "2026-11-18T23:49:42.394637"
+      },
+      "result": "REJECTED",
+      "skill_generated": "fabricated_citation_flagger",
+      "test_results": [],
+      "timestamp": "2026-11-18T23:49:42.394796",
       "error_message": null
     }
   ]
