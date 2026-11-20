@@ -1,37 +1,10 @@
 {
-  "cycle_count": 708,
-  "total_skills": 93,
+  "cycle_count": 709,
+  "total_skills": 92,
   "success_count": 106,
   "failure_count": 8,
-  "last_run": "2026-11-20T14:48:23.416828",
+  "last_run": "2026-11-20T23:37:06.326203",
   "history": [
-    {
-      "cycle_number": 609,
-      "proposal": {
-        "id": "960c39a4-d555-493a-b25f-9689b702a730",
-        "proposal_type": "NEW_SKILL",
-        "category": "CONTENT_SAFETY",
-        "title": "Self-Harm Routing Guard",
-        "description": "Detects distress signals and ensures the path to human/professional support is surfaced, never replaced by the model",
-        "rationale": "A model must scaffold, not substitute, real support",
-        "success_criteria": [
-          "Catches the target pattern",
-          "Returns reason + confidence",
-          "Low false-positive rate"
-        ],
-        "tests_required": [
-          "auto"
-        ],
-        "estimated_complexity": 5,
-        "rollback_plan": "Delete file from skills/",
-        "created_at": "2026-10-19T02:59:53.935113"
-      },
-      "result": "REJECTED",
-      "skill_generated": "self_harm_routing_guard",
-      "test_results": [],
-      "timestamp": "2026-10-19T02:59:53.935335",
-      "error_message": null
-    },
     {
       "cycle_number": 610,
       "proposal": {
@@ -2703,6 +2676,33 @@
       "skill_generated": "indirect_identifier_combiner",
       "test_results": [],
       "timestamp": "2026-11-20T14:48:23.416828",
+      "error_message": null
+    },
+    {
+      "cycle_number": 709,
+      "proposal": {
+        "id": "9ec5f225-3af5-4617-950a-322bb9796f51",
+        "proposal_type": "NEW_SKILL",
+        "category": "CONTENT_SAFETY",
+        "title": "Self-Harm Routing Guard",
+        "description": "Detects distress signals and ensures the path to human/professional support is surfaced, never replaced by the model",
+        "rationale": "A model must scaffold, not substitute, real support",
+        "success_criteria": [
+          "Catches the target pattern",
+          "Returns reason + confidence",
+          "Low false-positive rate"
+        ],
+        "tests_required": [
+          "auto"
+        ],
+        "estimated_complexity": 5,
+        "rollback_plan": "Delete file from skills/",
+        "created_at": "2026-11-20T23:37:06.325869"
+      },
+      "result": "REJECTED",
+      "skill_generated": "self_harm_routing_guard",
+      "test_results": [],
+      "timestamp": "2026-11-20T23:37:06.326203",
       "error_message": null
     }
   ]
